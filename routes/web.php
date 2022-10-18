@@ -39,7 +39,12 @@ Route::middleware([
 // admin
 
 Route::get('/user',[adminController::class,'user']);
-Route::get('/f/{id}',[adminController::class,'user_delete']);
+Route::get('/user/{id}',[adminController::class,'user_delete']);
+Route::get('/menu',[adminController::class,'menu']);
+//Reservation insert db
+Route::post('/reservation',[adminController::class,'reservation']);
+//Reservation show in admin panel 
+Route::post('/reservation_show',[adminController::class,'reservation_show']);
 
 
 

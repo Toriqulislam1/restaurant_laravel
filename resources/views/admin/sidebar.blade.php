@@ -70,7 +70,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-laptop"></i>
               </span>
-              <span class="menu-title">Product</span>
+              <span class="menu-title">Chefs</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
@@ -81,12 +81,22 @@
               </ul>
             </div>
           </li>
+
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{url('catagory_view')}}">
+            <a class="nav-link" href="{{url('reservation_show')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
-              <span class="menu-title">Catagory</span>
+              <span class="menu-title">Reservation</span>
+            </a>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('menu')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">MENU</span>
             </a>
           </li>
           

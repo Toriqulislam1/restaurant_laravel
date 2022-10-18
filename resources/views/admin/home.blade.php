@@ -44,7 +44,7 @@
           </div>
         </div>
       </div>
-
+    
       <!-- partial:partials/_sidebar.html -->
       @include('admin.sidebar')
       <!-- partial -->
@@ -73,5 +73,6 @@
     <!-- Custom js for this page -->
     <script src="admin/assets/js/dashboard.js"></script>
     <!-- End custom js for this page -->
+  
   </body>
 </html>
