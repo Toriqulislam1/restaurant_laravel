@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\product;
 use App\Models\reservation;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -63,24 +64,43 @@ public function reservation(Request $request){
 
 public function reservation_show(){
 
-$reser_show = reservation::all();
+  $resershow=reservation::all();
 
 
-return view('admin.reservation_show',compact('reser_show'));
 
+return view('admin.reservation_show',compact('resershow'));
+
+}
+
+ public function add_product(){
+
+return view('admin.add_product');
+
+
+
+ }
+
+public function productAddDb(Request $request){
+
+  $add = new product();
+  $add->price=$request->price;
+  $add->title=$request->title;
+  $add->descriptionc=$request->descriptionc;
+
+
+  $image = $request->image;
+  $imagename = time().'.'.$image->getclientoriginalextension();
+
+  
+  $request->image->move(('product'),  $imagename);
+  $add->image= $imagename;
+ 
+
+  
+
+  $add->save();
+  return redirect()->back();
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-}
+      }

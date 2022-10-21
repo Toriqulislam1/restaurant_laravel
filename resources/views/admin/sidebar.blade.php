@@ -70,7 +70,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-laptop"></i>
               </span>
-              <span class="menu-title">Chefs</span>
+              <span class="menu-title">product</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">

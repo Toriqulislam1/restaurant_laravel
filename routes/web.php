@@ -44,7 +44,11 @@ Route::get('/menu',[adminController::class,'menu']);
 //Reservation insert db
 Route::post('/reservation',[adminController::class,'reservation']);
 //Reservation show in admin panel 
-Route::post('/reservation_show',[adminController::class,'reservation_show']);
+Route::get('/reservation_show',[adminController::class,'reservation_show']);
+// add product
+Route::get('/add_product',[adminController::class,'add_product']);
+// add  database product
+Route::post('/productAddDb',[adminController::class,'productAddDb']);
 
 
 
