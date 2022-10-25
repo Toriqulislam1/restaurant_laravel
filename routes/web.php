@@ -49,6 +49,8 @@ Route::get('/reservation_show',[adminController::class,'reservation_show']);
 Route::get('/add_product',[adminController::class,'add_product']);
 // add  database product
 Route::post('/productAddDb',[adminController::class,'productAddDb']);
+//chefs admin
+Route::get('/chefs',[adminController::class,'chefs']);
 
 
 

@@ -103,4 +103,28 @@ public function productAddDb(Request $request){
 }
 
 
+  public function chefs(){
+
+
+
+    return view('admin.chefs');
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       }

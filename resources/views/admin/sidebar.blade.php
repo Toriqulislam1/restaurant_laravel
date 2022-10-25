@@ -90,6 +90,14 @@
               <span class="menu-title">Reservation</span>
             </a>
           </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('chefs')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">OUR CHEFS</span>
+            </a>
+          </li>
 
           <li class="nav-item menu-items">
             <a class="nav-link" href="{{url('menu')}}">
